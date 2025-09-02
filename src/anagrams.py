@@ -1,6 +1,8 @@
 # Write your solution here
 def anagrams(word1 : str, word2 : str):
-    pass
+    if sorted(word1) == sorted(word2):
+        return True
+    return False
 
 if __name__ == "__main__":
     print(anagrams("tame", "meta")) # True
